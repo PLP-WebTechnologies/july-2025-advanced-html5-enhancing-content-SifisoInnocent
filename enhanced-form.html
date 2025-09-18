@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Content & Form Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    header, footer { background: #f0f0f0; padding: 10px; text-align: center; }
+    main { max-width: 800px; margin: auto; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    table, th, td { border: 1px solid #ccc; }
+    th, td { padding: 8px; text-align: left; }
+    fieldset { margin-bottom: 15px; padding: 10px; }
+    legend { font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 6px; margin: 4px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Web Page</h1>
+</header>
+
+<main>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>My Favorite Hobbies</h2>
+    <ul>
+      <li>Reading</li>
+      <li>Coding</li>
+      <li>Traveling</li>
+    </ul>
+
+    <h2>Steps to Build a Web Page</h2>
+    <ol>
+      <li>Plan your content</li>
+      <li>Write HTML structure</li>
+      <li>Add CSS for styling</li>
+      <li>Test and validate</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Course Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Topic</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>09:00 - 11:00</td>
+          <td>HTML5 Basics</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>09:00 - 11:00</td>
+          <td>Forms & Validation</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Examples</h2>
+    <img src="https://via.placeholder.com/400x200" alt="Sample Image">
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <video width="400" controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required minlength="3">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="interests">Select your interests:</label>
+        <select id="interests" name="interests" required>
+          <option value="">--Select--</option>
+          <option value="coding">Coding</option>
+          <option value="reading">Reading</option>
+          <option value="traveling">Traveling</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit Form">
+
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 My Web Page
+</footer>
+
+</body>
+</html>
